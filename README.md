@@ -15,3 +15,9 @@ and fork or clone this git repo
 ```bash
 git clone git@github.com:juristr/sublime-snippets.git
 ```
+
+## Snippets
+
+For a list of snippets plz take a look at the code. So far there is support for
+
+- JavaScriptMVC controllers, functions etc..
