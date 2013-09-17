@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+<figure>
+  <img src="${1:/service-manual/assets/images/}$2" />
+  <figcaption>$3</figcaption>
+</figure>
+$0
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>htmlfig</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!--<scope>javascript.js</scope>-->
+    <scope>text.html.markdown</scope>
+</snippet>
