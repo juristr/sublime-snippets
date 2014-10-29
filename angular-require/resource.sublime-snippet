@@ -1,0 +1,22 @@
+<snippet>
+    <content><![CDATA[
+(function(define){
+    'use strict';
+
+    define([], function(){
+
+        function ${1:theName}(){
+            $0
+        }
+
+        return ${1:theName};
+
+    });
+
+})(define);
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>newResource</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+</snippet>
