@@ -5,18 +5,28 @@
 
     define([], function(){
 
-        function ${1:theName}(){
+        function ${1:TheController}Ctrl(){
+            var vm = this;
             $0
+
+            activate();
+
+            /////////////////////
+
+            // perform startup ops
+            function activate(){
+
+            }
         }
 
-        return ${1:theName};
+        return ${1:TheController}Ctrl;
 
     });
 
 })(define);
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-    <tabTrigger>newResource</tabTrigger>
+    <tabTrigger>newController</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.js</scope>
 </snippet>

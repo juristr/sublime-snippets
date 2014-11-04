@@ -1,0 +1,33 @@
+<snippet>
+    <content><![CDATA[
+(function(define, describe){
+  'use strict';
+
+  /*jshint unused: vars */
+  define([
+      'angular',
+      'angular-mocks',
+      '${1:/module/service/path}',
+    ],
+
+    function(angular, angularMocks, ${2:serviceUnderTest}) {
+
+      describe('${3:ServiceName}', function () {
+        var service;
+
+        beforeEach(function(){
+          service = ${2:serviceUnderTest}();
+        });
+
+        $0
+
+      });
+  });
+
+})(define, describe);
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>newServiceSpec</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+</snippet>

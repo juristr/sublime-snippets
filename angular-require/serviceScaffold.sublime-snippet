@@ -1,0 +1,29 @@
+<snippet>
+    <content><![CDATA[
+(function(define){
+    'use strict';
+
+    define([], function(){
+
+        function ${1:theName}(){
+            var service = {
+                $0
+            };
+            return service;
+
+            /////////////////////
+
+
+        }
+
+        return ${1:theName};
+
+    });
+
+})(define);
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>newService</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+</snippet>

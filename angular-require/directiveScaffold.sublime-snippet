@@ -1,0 +1,23 @@
+<snippet>
+    <content><![CDATA[
+(function(define){
+    'use strict';
+
+    define([], function(){
+
+        function ${1:theDirective}(){
+            return {
+                restrict: '${2:EA}'$0
+            }
+        }
+
+        return ${1:theDirective};
+    });
+
+})(define);
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>newDirective</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+</snippet>

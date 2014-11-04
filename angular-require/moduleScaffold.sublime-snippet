@@ -1,0 +1,38 @@
+<snippet>
+    <content><![CDATA[
+(function(define){
+    'use strict';
+
+    define([
+        'angular',
+        './routes.config',
+        'angular-translate',
+        'angular-translate-loader-partial',
+        'angular-ui-router'
+    ],
+    function(
+        angular,
+        routesConfig){
+
+        var moduleName = '${1:namespace.module}';
+
+        angular.module(moduleName, [
+                'ui.router',
+                'pascalprecht.translate'
+            ])
+            // @ngInject
+            .config(function(\$translatePartialLoaderProvider){
+                \$translatePartialLoaderProvider.addPart('${2:modulepath}');
+            })
+            .config(routesConfig);$0
+
+        return moduleName;
+    });
+
+})(define);
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>newModule</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+</snippet>
