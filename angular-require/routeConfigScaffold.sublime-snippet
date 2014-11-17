@@ -6,23 +6,23 @@
   define(
     [],
     function(){
-
-      // @ngInject
-      return function(\$stateProvider, \$urlRouterProvider){
-        // For any unmatched url, redirect to /state1
-        \$urlRouterProvider.otherwise('/');
-        $0
-
-        /*
-        \$stateProvider
-          .state('dashboard', {
-            url: '/',
-            templateUrl: './scripts/shell/dashboard.html',
-            controller: 'TheCtrl',
-            controllerAs: 'vm'
-          });
-        */
-
+      return function (){
+        return [
+            {$0
+              state: 'debug',
+              url: '/debug',
+              templateUrl: './scripts/diagnostics/debug.html',
+              controller: 'DebugCtrl',
+              controllerAs: 'vm',
+              menu: {
+                title: 'Diagnostics',
+                iconClass: 'fa fa-bug'
+              },
+              dependencies: [
+                'diagnostics/module.lazy'
+              ]
+            }
+          ];
       };
     });
 })(define);

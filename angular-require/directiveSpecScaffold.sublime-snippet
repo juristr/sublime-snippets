@@ -1,0 +1,51 @@
+<snippet>
+    <content><![CDATA[
+(function(define, describe) {
+  'use strict';
+
+  /*jshint unused: vars */
+  define([
+      'angular',
+      '${1:/module/directive/path}',
+      'angular-mocks',
+      'jquery'
+    ],
+
+    function(
+      angular,
+      ${2:directiveName}Directive) {
+
+      describe('<${3:directive-tag-name}>', function() {
+        var element,
+          scope;
+
+        // inject compiled templates
+        beforeEach(module('templates'));
+
+        beforeEach(module(function(\$compileProvider) {
+          \$compileProvider.directive('${2:directiveName}', ${2:directiveName}Directive);
+        }));
+
+        beforeEach(module(function(\$provide) {
+          // initialize your dependencies here
+        }));
+
+        beforeEach(inject(function(\$compile, \$rootScope) {
+          scope = \$rootScope.\$new();
+          element = \$compile('<${3:directive-tag-name}></${3:directive-tag-name}>')(scope);
+
+          scope.\$digest();
+        }));
+
+        $0
+
+      });
+    });
+
+})(define, describe);
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>newDirectiveSpec</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+</snippet>
